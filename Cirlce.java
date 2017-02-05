@@ -12,7 +12,7 @@ public class Cirlce
 		double diameter;
 		double area;
 		
-		diameter = 2*radius;
+		diameter = 2*radius; //incorrect formula, should also multiply with PI.
 		area = Math.PI * radius * radius;
 		
 		System.out.println("The circle's radius is "+radius);
