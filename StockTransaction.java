@@ -17,6 +17,9 @@ public class StockTransaction {
 		double earnedTot = (purShares*purStock);
 		double soldTot = (soldShares*soldStock);
 		double total = ((soldTot-brokerSold)-(earnedTot-brokerBuy));
+		/* This formula is not correct. First calculate the profit: sold - bought, then take off the commission to find 
+		the net profit.
+		*/
 		
 		System.out.println("Joe paid $"+formatter.format(earnedTot)+"for the stock.");
 		System.out.println("Joe paid his broker $"+formatter.format(brokerBuy)+"when he bought the stocks");
